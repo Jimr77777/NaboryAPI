@@ -17,8 +17,8 @@ namespace Persistence.Contexts
         }
         public IDbConnection Connection => Database.GetDbConnection();
 
-        public DbSet<Employee> Employees { get; set; }
-        public DbSet<Department> Departments { get; set; }
+        public DbSet<User> Users { get; set; }
+        public DbSet<Neighborhood> Neighborhoods { get; set; }
 
     }
 }

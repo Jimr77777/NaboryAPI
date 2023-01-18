@@ -15,8 +15,8 @@ namespace Domain.Interfaces
     {
         public IDbConnection Connection { get; }
         DatabaseFacade Database { get; }
-        public DbSet<Employee> Employees { get; set; }
-        public DbSet<Department> Departments { get; set; }
+        public DbSet<User> Users { get; set; }
+        public DbSet<Neighborhood> Neighborhoods { get; set; }
         Task<int> SaveChangesAsync(CancellationToken cancellationToken);
     }
 }
